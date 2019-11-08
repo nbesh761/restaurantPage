@@ -1,0 +1,402 @@
+
+
+/*CSS for the toogle color button*/
+.class3 {
+    font-size: 1em;
+    font-style: italic;
+    color: red;
+    background-color:bisque;
+}
+
+/*CSS for the Read Buttons*/
+#hide
+{
+    display: none;
+}
+
+#poop button
+{
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-left: 10em;
+}
+
+/*End of CSS for the read buttons*/
+
+/*-------------------CSS for the Home page---------------------------------------*/
+
+body
+{
+    background-color:antiquewhite;
+}
+
+.header
+{
+    
+    background-color: black;
+}
+/*CSS for the logo of the company giving it a margin and padding character*/
+.logo img, .space , .header img
+{
+    margin:1em;
+    padding-left: 2em;
+}
+.logo img
+{
+    height: 4em;
+}
+.space
+{
+    background-color:coral;
+}
+
+
+.space ul li
+{
+    padding-left: 1.5em;
+    margin-top: 1em;
+    
+}
+
+.space ul li a
+{
+    font-size: 110%;
+    font-weight: bolder;
+    color: red;
+    font-style: italic;
+    
+}
+
+.space ul li a:hover
+{
+    background-color:blue;
+    font-size: 120%;
+}
+
+/********End of CSS for the header nav*/
+
+#nav-content .active
+{
+    color: red;
+    font-size: 110%;
+}
+
+
+/*CSS for the height of teh carousel picture*/
+/*
+
+.slide img
+{
+    height:34em;
+    
+}*/
+
+/*CSS For the information bar with picturs*/
+.indent
+{
+    position: relative;
+    left: 1em;
+    top: 1em;
+    
+        
+}
+
+#slide2 ul li
+{
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+#slide2 ul li:hover
+{
+    background-color:coral;
+    
+}
+
+#slide2 ul li a:hover
+{
+    color: red;
+    font-size: 120%;
+}
+/*CSS For the Footer*/
+
+footer form
+{
+    padding-left: 1em;
+}
+
+/*Backgroun color for our submit buttons*/
+.btn-primary
+{
+    background-color: brown;
+    
+}
+
+/*CSS For the operning hours of our resturants in the footer*/
+.hours1
+{
+    text-align: left;
+    font-size: 80%;
+    text-align: center;
+ 
+    
+}
+
+.hours1 p
+{
+    padding: 0.25em;
+    font-weight: bolder;
+    font-style: oblique;
+    
+}
+
+footer img
+{
+    padding: 1em;
+   
+    width: 100%;
+}
+
+/*CSS for the submenu2 */
+.submenu2
+{
+    padding: 2em;
+    
+}
+.submenu2 a:hover
+{
+    background-color: coral;
+    color: blue;
+    font-size: 120%;
+}
+.submenu2 a
+{
+    padding: 1.5em;
+    text-align: center;
+    font-size: 100%;
+}
+
+/**---------------------------------------------CSS For About us--------------------*/
+
+
+
+/*CSS Class For the submenu options*/
+.submenu a
+{
+   padding: 1em;
+}
+
+.submenu a
+{
+    font-size: 120%;
+}
+/*CSS For the third row*/
+.submenu a:hover
+{
+    color: red;
+    font-size: 150%;
+}
+.demo
+{
+    margin: 1em;
+    padding: 1em;
+}
+
+.demo p
+{
+    padding: 1em;
+    text-align: center;
+    font-size: 120%;
+}
+
+.jumbotron
+{
+    text-align: center;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 300%;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    height: 0%;
+}
+.jumbotron:hover
+{
+    background-color:brown;
+    cursor: help;
+    color: white;
+}
+
+p
+{
+    padding: 0.5em;
+    text-indent: 2em;
+    font-size: 120%;
+}
+
+.navbar-dark
+{
+    color: red;
+}
+
+/*-------------------------------------CSS for Contact Us-----------------------------------*/
+
+/*CSS for the front picture in the Contact us page*/
+
+.frontpic img
+{
+    width: 400px;
+    height: 80%;
+    margin: 0.5em;
+    margin-top: 3em;
+    
+    
+    
+    
+}
+
+
+/*CSS for our second logo pictures of social medias*/
+.logo_2 
+{
+    width: 10%;
+    margin: 0.5em;
+    position: relative;
+    left: 3em;
+   
+}
+
+.logo_2:hover
+{
+    color: red;
+    font-size: 110%;
+}
+
+
+
+h3 
+{
+    text-align: center;
+    font-size: 2em;
+    margin: 1em;
+    margin-bottom: 0em;
+    background-color: black;
+    color: red;
+    height: 1em;
+}
+
+h3:hover
+{
+    color: blue;
+    
+}
+
+h3 p
+{
+    font-style: italic;
+    text-align: center;
+}
+
+h4
+{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0.5em;
+    background-color: black;
+    color:red;
+}
+
+.hours p
+{
+    font-style: oblique;
+    font-size: 100%;
+    padding: 0.25em;
+    text-align: center;
+}
+
+section
+{
+    border: solid 1px;
+    padding: 2em;
+}
+
+/*-----------------------------CSS for the Location page-------------*/
+
+
+/* CSS for our Resturant Pictures*/
+.restopic
+{
+    margin: 1em;
+    padding: 1em;
+}
+
+/*CSS for the locations */
+
+#resto1 p , #resto1  address , #resto2 p , #resto2 address , #resto3 p , #resto3 address
+{
+    text-align: center;
+    font-family:sans-serif;
+    padding-top: 1em;
+}
+
+.time
+{
+    padding: 0em;
+    margin: 0em;
+    color: red;
+}
+
+/*---------------------CSS for the Menu page----------------------------------*/
+
+.name
+{
+    font-size: 100%;
+    margin-bottom:0em;
+    margin-top: 1em;
+    padding: 0.5em;
+}
+.item
+{
+    font-size: 80%;
+    padding: 0.25em;
+    margin: 0.25em;
+    position: relative;
+    left: 4em;
+    width: 70%;
+}
+
+.price
+{
+    font-size: 80%;
+    Padding: 0em;
+    margin: 0.25em;
+    position: relative;
+    left: 4em;
+    width: 70%;
+}
+
+.on
+{
+    border-radius: 8em;
+}
+/*Overriding the bootstrap rule for the table*/
+.table-hover th
+{
+    font-weight: bolder;
+    color: red;
+    background-color: black;
+}
+
+.table
+{
+    border: solid 1px green;
+}
+
+.reduce
+{
+    width: 90%;
+    text-align: center;
+    margin-left: 2em;
+}
+
+/*-----------------------CSS for the information page-----------*/
+

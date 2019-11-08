@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <title>Ethiopian Resturant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/design.css">
+    <script src="code.js"></script>
+
+</head>
+
+<body class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="50" onload="menuPage_loadSavedData()" id="easyRead">
+
+    <!--Header tag-->
+    <div class="row" id="poop">
+
+        <button class="btn btn-primary" id="nop" onclick="myfunction()"> Easy Read </button>
+        <!-- When pressed it will call the function myfunction from the code.js and process ir-->
+
+        <button class="btn btn-primary" id="hide" onclick="run()">Normal Read </button>
+        <!--when pressed it will call the function run from the code.js and process it-->
+        
+         <!--when pressed it will call the function toggleColor from the code.js and process it-->
+        
+        <button class="btn btn-primary" onclick="toggleColor()">Toggle Button</button>
+    </div>
+
+    <header>
+
+        <div class="row header">
+
+            <div class="col-md-12 col-lg-3 logo">
+                <img src="pic/logo-sheba.png" alt="Resturant logo" title="Resturant Logo" width="200">
+            </div>
+
+            <div class="col-md-12 col-lg-9">
+
+                <!--creating the nav tag for the navbar-->
+                <nav class="navbar navbar-expand-md navbar-light bg-default space">
+
+                    <!--For the togglable menu on smaller device-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content"><span class="navbar-toggler-icon"></span>
+                </button>
+
+                    <!--Links - Adding up the links that we use-->
+
+                    <div class="collapse navbar-collapse" id="nav-content">
+                        <!--Use ul for lists of the link-->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="history.html">About Us</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="menu.html">Menu</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="location.html">Location</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="info.html">Information</a></li>
+                        </ul>
+                    </div>
+
+
+                </nav>
+
+
+            </div>
+
+
+
+        </div>
+    </header>
+
+    <!--End of Header-->
+
+    <div class="row">
+        <div class="jumbotron col-sm-12" id="breakfast"> Breakfast and Brunch</div>
+
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <img class="img-fluid on" src="pic/breakfast_genfo.jpg" alt="breakfast Pic" title="BreakFast" height="100%">
+
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+
+            <div>
+                <p class="name">MUSHROOM</p>
+                <p class="item">Sauteed mushrooms , onions and speical sause with pepper</p>
+                <p class="price">$6.99</p>
+            </div>
+
+            <div>
+                <p class="name">SHRIMP TIBS</p>
+                <p class="item">Sauteed shrimp with onions , red pepper and garlic sause</p>
+                <p class="price">$6.99</p>
+            </div>
+
+            <!--
+
+            <div>
+                <p class="name">KINCH'E</p>
+                <p class="item">Omelette: scarambled eggs , kinch'e with butter </p>
+                <p class="price">$5.50</p>
+            </div>
+
+            <div>
+                <p class="name">FERTATA</p>
+                <p class="item">Firfir: small pieces of pan-bread , onions , tomatoes , Hot sause</p>
+                <p class="price">$8.50</p>
+            </div>
+
+            -->
+
+
+            <div>
+                <p class="name">T'IBS FIRFIR</p>
+                <p class="item">Firfir: Fresh injera , beef , tomatoes , onion , hot sause</p>
+                <p class="price">$10.99</p>
+            </div>
+            <div>
+                <p class="name">SHEBA'S SPECIAL</p>
+                <p class="item">Omelette and Sandwich: eggs , onions , tomatoes , bread + Juice</p>
+                <p class="price">$13.50</p>
+            </div>
+
+
+
+
+
+        </div>
+        <br/>
+
+        <div class="col-sm-12 col-md-12 col-lg-12 container">
+
+            <table class="table table-hover reduce" id="addMenuHere"></table>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!--Appetizer Menu-->
+
+    <div class="row">
+        <div class="jumbotron col-sm-12" id="salad"> APPETIZERS : SALADS</div>
+
+
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <img class="img-fluid on" src="pic/appetizer_pinwheel.jpg" alt="Appetizer" title="Appetizer">
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <div>
+                <p class="name">MEET AND CHICKEN SAMBUSA</p>
+                <p class="item">Fried pastery filled with meat - 2 pieces</p>
+                <p class="price">$2.99</p>
+            </div>
+
+            <div>
+                <p class="name">HOUSE SALAD</p>
+                <p class="item">Beets , string beans , onions , lemon and olive oil</p>
+                <p class="price">$2.99</p>
+            </div>
+
+            <div>
+                <p class="name">MEAT SUSHI</p>
+                <p class="item"> Bite size pieces of Injera rolled with Meat sause - 1 pieces</p>
+                <p class="price">$4.99</p>
+            </div>
+
+            <!--
+
+            <div>
+                <p class="name">VEGITABLE SUSHI</p>
+                <p class="item">Bite size pieces of Injera rolled with Vegitable sause - 1 pieces</p>
+                <p class="price">$2.99</p>
+            </div>
+
+
+
+
+            -->
+
+
+
+            <div>
+                <p class="name">AVOCADO SALAD</p>
+                <p class="item">Fresh lettuce , tomatoes , onions , jalapenos , avocados</p>
+                <p class="price">$6.99</p>
+            </div>
+
+            <div>
+                <p class="name">FRIES</p>
+                <p class="item">Fried Potatoes , Sunflower Oil</p>
+                <p class="price">$6.99</p>
+            </div>
+
+        </div>
+        
+        <br/>
+        <div class="col-sm-12 col-md-12 col-lg-12 ">
+
+            <table class="table table-hover reduce" id="addSaladHere"></table>
+
+        </div>
+
+    </div>
+
+    <!--Main menu-->
+
+    <div class="row">
+        <div class="jumbotron col-sm-12" id="mains"> MAINS</div>
+        
+
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <img class="img-fluid on" src="pic/Ethiopian-food-pic-2.jpg" alt="main" title="Main">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <div>
+                <p class="name">CHIKEN MEAL : DORO WOT</p>
+                <p class="item">Chicken: chicken , eggs, onions , tomatoes , Spicy sause</p>
+                <p class="price">$16.99</p>
+            </div>
+
+            <div>
+                <p class="name">SPINACH AND RICE WITH CHICKEN</p>
+                <p class="item"> Chicken : Stripes of tender Chicken , onions . garlic , Jalepones , Awaze </p>
+                <p class="price">$16.99</p>
+            </div>
+
+            <div>
+                <p class="name">BEEF GORED GORED</p>
+                <p class="item">Beef : beef chunks with bones , onions , garlic , herbs , spices </p>
+                <p class="price">$17.50</p>
+            </div>
+
+            <div>
+                <p class="name">T'IBS FIRFIR</p>
+                <p class="item">Firfir: Fresh injera , beef , tomatoes , onion , hot sause</p>
+                <p class="price">$10.99</p>
+            </div>
+
+           
+
+            <div>
+                <p class="name">SHEBA'S SPECIAL</p>
+                <p class="item"> Combination platter: Kitfo , Awaze Tibs , Dulet , Tibs Firfir + Juice</p>
+                <p class="price">$23.99</p>
+            </div>
+
+
+
+        </div>
+        <br/>
+        <br/>
+        
+        <div class="col-sm-12 col-md-12 col-lg-12">
+
+            <table class="table table-hover reduce" id="addMainHere"></table>
+
+        </div>
+
+       
+    </div>
+
+    <!--Beverage Menu-->
+
+    <!--
+
+
+
+<div class="row">
+        <div class="jumbotron col-sm-12" id="drinks"> DRINKS : BEVERAGE </div>
+         <div class="col-sm-12 col-md-12 col-lg-12">
+
+
+
+            <table class="table table-hover" id="addDrinkHere"></table>
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <img class="img-fluid on" src="pic/drinks.jpg" alt="Drinks" title="COFFEEr">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <div>
+                <p class="name">COFFEE</p>
+                <p class="item">Ethiopian coffee cermony : fresh Roasted coffee</p>
+                <p class="price">$2.99</p>
+            </div>
+
+            <div>
+                <p class="name">SPECIAL TEE</p>
+                <p class="item">Ethiopian Spiced tea: Tea</p>
+                <p class="price">$1.99</p>
+            </div>
+
+            <div>
+                <p class="name">FRESH RICH JUCIES</p>
+                <p class="item">Orange , Papaya , Avocado , Mango</p>
+                <p class="price">$8.99</p>
+            </div>
+
+            <div>
+                <p class="name">WINE</p>
+                <p class="item"> Red Wine - per Glass</p>
+                <p class="price">$5.50</p>
+                <p class="item"> White Wine - per Glass</p>
+                <p class="price">$5.50</p>
+            </div>
+
+
+
+            <div>
+                <p class="name">BEER</p>
+                <p class="item">Corona , Heineken , Becks</p>
+                <p class="price">$6.50</p>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>-->
+
+    <!--Nav tag for the scrollpsy-->
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-bottom" id="slide2">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#breakfast">BREAKFAST</a></li>
+            <li class="nav-item"><a class="nav-link" href="#salad">SALADS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mains">MAINS</a></li>
+            
+        </ul>
+    </nav>
+
+
+    <table class="table table-striped" id="addMenuHere"></table>
+
+    <!--Footer Html---------------------------->
+
+    <footer>
+
+        <article style="background-color:coral">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <h4>Sheba Resturant</h4>
+                    <form name="footer" method="get" action="">
+                        <br/>
+                        <input type="date" class="form-control" name="Date" placeholder="Please enter date">
+                        <br/>
+                        <select name="howMany" class="form-control">
+                        <option>1 Person</option>
+                        <option>2 People</option>
+                        <option>3 People</option>
+                        <option>4 People</option>
+                        <option>5 People</option>
+                    </select>
+                        <br/>
+
+                        <select name="time" class="form-control">
+                        <option>5:30</option>
+                        <option>6:30</option>
+                        <option>7:30</option>
+                        
+                        <option>8:30</option>
+                    </select>
+                        <br/>
+                        <button class="btn btn-primary" type="submit">Find a Table</button>
+                    </form>
+
+                </div>
+
+                <!--
+
+                          <div class="col-sm-3 col-md-0 col-lg-3">
+                    <h4 style="font-style: italic"> Visit us</h4>
+                    <p style="text-align: left;"> Sheba Resturant</p>
+                    <address>71 Hidden Hills Way NW</address>
+                    <tel>Phone Main Branch: 403-976-8968</tel>
+                    <email>Email : anaty@kjsd.com</email>
+
+
+
+                </div>
+
+
+                    -->
+
+
+                <div class="col-sm-4 col-md-4 col-lg-4 hours1">
+                    <h4 style="font-style: italic"> Our Hours </h4>
+                    <p>Mon : 8:30 - 10:00</p>
+                    <p>Tue : 8:30 - 10:00</p>
+                    <p>Wed : 8:30 - 10:00</p>
+                    <p>Thu : 8:30 - 10:00</p>
+                    <p>Fri : 7:00 - 1:00</p>
+                    <p>Sat : 7:00 - 1:30</p>
+                    <p>Sun : 8:30 - 7:00</p>
+
+
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <img class="img-fluid" src="pic/shebaRestaurant-with-Awesome-View-4.jpg" alt="Resturant View" title="View From our Resturant at night time">
+                </div>
+            </div>
+
+
+
+            <hr/>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="nav container " id="slide2" style="background-color: black; padding: 2em;">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact </a></li>
+                            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                            <li class="nav-item"><a class="nav-link" href="info.html">Information</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </article>
+
+    </footer>
+
+    <!--End of THe Footer-->
+
+
+
+
+
+
+
+
+
+
+    <br/>
+    <br/>
+
+
+
+
+
+    <!-- Optional JavaScript must be at the bottomof the Body -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jsLibs/jquery-3.0.0.min.js"></script>
+    <script src="jsLibs/popper.min.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

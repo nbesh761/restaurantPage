@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>Ethiopian Resturant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/design.css">
+    <script src="code.js"></script>
+</head>
+
+<body class="container-fluid" id="easyRead">
+
+    <!--Header Tag-->
+    <div class="row" id="poop">
+
+        <button class="btn btn-primary" id="nop" onclick="myfunction()"> Easy Read </button>
+        <!-- When pressed it will call the function myfunction from the code.js and process ir-->
+
+        <button class="btn btn-primary" id="hide" onclick="run()">Normal Read </button>
+        <!--when pressed it will call the function run from the code.js and process it-->
+        
+         <!--when pressed it will call the function toggleColor from the code.js and process it-->
+        
+        <button class="btn btn-primary" onclick="toggleColor()">Toggle Button</button>
+    </div>
+
+
+
+    <header>
+
+
+
+        <div class="row header">
+
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <img src="pic/logo-sheba.png" alt="Logo" title="Logo" width="200">
+
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-9">
+
+
+                <!-- Creating the nav tag for the navbar-->
+                <nav class="navbar navbar-expand-md navbar-light bg-default space">
+
+                    <!--Create the button for the togglable menu on medium device-->
+
+                    <button class="btn btn-primary navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content"><span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--Links adding uo the links that we will use-->
+
+                    <div class="collapse navbar-collapse" id="nav-content">
+                        <!--Use ul for lists of the link-->
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="history.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="location.html">Location</a></li>
+                            <li class="nav-item"><a class="nav-link" href="info.html">Information</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+
+            </div>
+
+
+
+
+        </div>
+
+    </header>
+    <!--End of Header tag-->
+    
+    <!--Collapse Bootstrap for the location of resturants branches-->
+
+    <div class="row restopic">
+
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" data-toggle="collapse" data-target="#resto1">
+
+            <img class="img-fluid" src="pic/Resturant_DownTown.jpg" alt="Resturant Picture" title="Press Thse Picture For More Info : DownTown Area">
+
+
+
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" data-toggle="collapse" data-target="#resto2">
+
+            <img class="img-fluid" src="pic/Resturant_NearCalgary%20ZOO.jpg" alt="Resturant Picture" title="Press Thse Picture For More Info : Calgary Zoo Area">
+
+
+
+        </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" data-toggle="collapse" data-target="#resto3">
+
+            <img class="img-fluid" src="pic/Resturant%202.jpg" alt="Resturant Picture" title="Press Thse Picture For More Info : Airport Area">
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <div class="collapse container" id="resto1">
+        <section>
+            <h3>DownTown</h3>
+            <p>Located in the heart of the business district and a short walk from the train station. we are easily accessable from most major hotels in downtown.</p>
+            <address>523- 8 Avenue S.W. | Calgary | Alberta | T5W 5C7</address>
+            <p><a href="https://www.google.ca/maps">View Map</a></p>
+
+            <section class="time">
+                <p>Monday - Friday 8:00 AM to 11:00 PM</p>
+                <p>Saturday 8:30AM to 1:00 PM</p>
+            </section>
+
+            <p> Complimentary valet Parking after 5:00 PM</p>
+            <p> Paid Self parking on adjasant streets and pay lots.</p>
+            <p><a href="contact.html"> Reseravation</a></p>
+
+
+        </section>
+
+
+    </div>
+
+    <div class="collapse container" id="resto2">
+        <section>
+            <h3>Airport</h3>
+            <p>Situated in Airport village just near the Airport.Located in the heart of the Airport and a 10 minute walk from the airport. we are easily accessable from most major hotels in Airport.</p>
+            <address>2090 Airport Rd NE | Calgary | Alberta | T2W 6Z7</address>
+            <p><a href="https://www.google.ca/maps">View Map</a></p>
+
+            <section class="time">
+                <p>Monday - Friday 8:00 AM to 11:00 PM</p>
+                <p>Saturday 8:30AM to 1:00 PM</p>
+            </section>
+
+            <p> Free Parking after 5:00 PM</p>
+            <p> Paid Self parking on adjasant streets and pay lots.</p>
+            <p><a href="contact.html"> Reseravation</a></p>
+
+
+        </section>
+
+
+    </div>
+
+    <div class="collapse container" id="resto3">
+        <section>
+            <h3>Calgary Zoo</h3>
+            <p>Situatied in Calgary Zoo park village just north of marlborough mall on St. George Drive NE betwween the Calgary Zoo and Telus Spark Science Center </p>
+            <address>120 St. George's Drive NE | Calgary | Alberta | T3A 5Y3</address>
+            <p><a href="https://www.google.ca/maps">View Map</a></p>
+
+            <section class="time">
+                <p>Monday - Friday 8:00 AM to 11:00 PM</p>
+                <p>Saturday 8:30AM to 1:00 PM</p>
+            </section>
+
+            <p> Complimentary Free Parking </p>
+
+            <p><a href="contact.html"> Reseravation</a></p>
+
+
+        </section>
+
+
+    </div>
+
+    <!--Footer Html---------------------------->
+
+    <footer>
+
+        <article style="background-color:coral">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <h4>Sheba Resturant</h4>
+                    <form name="footer" method="get" action="">
+                        <br/>
+                        <input type="date" class="form-control" name="Date" placeholder="Please enter date">
+                        <br/>
+                        <select name="howMany" class="form-control">
+                        <option>1 Person</option>
+                        <option>2 People</option>
+                        <option>3 People</option>
+                        <option>4 People</option>
+                        <option>5 People</option>
+                    </select>
+                        <br/>
+
+                        <select name="time" class="form-control">
+                        <option>5:30</option>
+                        <option>6:30</option>
+                        <option>7:30</option>
+                        
+                        <option>8:30</option>
+                    </select>
+                        <br/>
+                        <button class="btn btn-primary" type="submit">Find a Table</button>
+                    </form>
+
+                </div>
+
+                <!--
+
+                          <div class="col-sm-3 col-md-0 col-lg-3">
+                    <h4 style="font-style: italic"> Visit us</h4>
+                    <p style="text-align: left;"> Sheba Resturant</p>
+                    <address>71 Hidden Hills Way NW</address>
+                    <tel>Phone Main Branch: 403-976-8968</tel>
+                    <email>Email : anaty@kjsd.com</email>
+
+
+
+                </div>
+
+
+                    -->
+
+
+                <div class="col-sm-4 col-md-4 col-lg-4 hours1">
+                    <h4 style="font-style: italic"> Our Hours </h4>
+                   <p>Mon : 8:30 - 10:00</p>
+                    <p>Tue : 8:30 - 10:00</p>
+                    <p>Wed : 8:30 - 10:00</p>
+                    <p>Thu : 8:30 - 10:00</p>
+                    <p>Fri : 7:00 - 1:00</p>
+                    <p>Sat : 7:00 - 1:30</p>
+                    <p>Sun : 8:30 - 7:00</p>
+
+
+
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <img class="img-fluid" src="pic/shebaRestaurant-with-Awesome-View-4.jpg" alt="Resturant View" title="View From our Resturant at night time">
+                </div>
+            </div>
+
+
+
+            <hr/>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="nav container " id="slide2" style="background-color: black; padding: 2em;">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact </a></li>
+                            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                            <li class="nav-item"><a class="nav-link" href="info.html">Information</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </article>
+
+    </footer>
+
+    <!--End of THe Footer-->
+
+
+
+
+
+
+
+    <!-- Optional JavaScript must be at the bottomof the Body -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jsLibs/jquery-3.0.0.min.js"></script>
+    <script src="jsLibs/popper.min.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
